@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #121212; /* Colore scuro della pagina */
+    --secondary-color: #1e1e1e; /* Colore intermedio */
+    --tertiary-color: #f5f5f5; /* Colore chiaro del testo */
+    --accent-color: #e8dfff; /* Colore lilla */
+    --font-primary: 'Poppins', sans-serif; /* Font primario */
+}
+
+html, body {
+    height: 100%; /* Altezza html e body al 100% */
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--primary-color); /* Colore uniforme di sfondo */
+    color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Fai sì che il contenuto principale occupi lo spazio disponibile */
+}
+
+.navbar {
+    background: linear-gradient(180deg, #444 0%, #1e1e1e 100%); /* Gradiente per la navbar */
+}
+
+/* Navbar brand */
+.navbar-brand {
+    color: var(--tertiary-color) !important; /* Colore del testo per il brand */
+    transition: color 0.3s; /* Transizione per effetto di hover */
+}
+
+.navbar-brand:hover {
+    color: var(--tertiary-color) !important; /* Colore al passaggio del mouse */
+}
+
+/* Stile per i link della navbar */
+.navbar-nav .nav-link {
+    color: var(--tertiary-color) !important; 
+    position: relative; 
+    transition: color 0.3s; 
+}
+
+/* Sottolineatura */
+.navbar-nav .nav-link::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Altezza della sottolineatura */
+    background-color: var(--accent-color); /* Colore della sottolineatura */
+    transform: scaleX(0); 
+    transform-origin: bottom right; 
+    transition: transform 0.3s; 
+}
+
+/* Sottolineatura al passaggio del mouse */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+}
+
+/* Rimuovere la sottolineatura solo per il link "Home" */
+.navbar-nav .nav-link.active::after {
+    display: none; /* Nascondere la sottolineatura per il link attivo */
+}
+
+/* Social icons */
+.social-icon {
+    color: var(--accent-color); /* Colore lilla */
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #333; /* Colore di hover */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, #555 0%, #2c2c2c 100%); /* Gradiente per il footer */
+    color: var(--accent-color); /* Colore del testo del footer */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navbar link active */
+.navbar-nav .nav-link.active {
+    color: var(--tertiary-color) !important;
+}
+
+/* Navbar link che non è attivo */
+.navbar-nav .nav-link:not(.active) {
+    color: var(--tertiary-color) !important; 
+}
+
+/* Personalizza l'icona dell'hamburger */
+.navbar-toggler {
+    border: 1px solid var(--tertiary-color); /* Colore del bordo del quadrato attorno */
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Rimuovi l'immagine di default */
+    position: relative; /* Posiziona i pseudo-elementi in modo assoluto */
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navbar-toggler-icon::before, 
+.navbar-toggler-icon::after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--tertiary-color); /* Colore delle righe */
+    position: absolute;
+    left: 0;
+    transition: background-color 0.3s;
+}
+
+.navbar-toggler-icon::before {
+    top: 0.3rem; /* Posizione della riga superiore */
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0.3rem; /* Posizione della riga inferiore */
+}
+
+.navbar-toggler-icon .middle-bar {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--tertiary-color); /* Colore della riga centrale */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Centra la riga centrale */
+    transition: background-color 0.3s;
+}

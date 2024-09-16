@@ -1,13 +1,12 @@
-
 :root {
-    --primary-color: #121212; /* Nero profondo */
-    --secondary-color: #1e1e1e; /* Grigio molto scuro */
-    --tertiary-color: #f5f5f5; /* Bianco per contrasto */
-    --accent-color: #e8dfff; /* Lilla chiaro */
+    --primary-color: #121212; /* Deep black */
+    --secondary-color: #1e1e1e; /* Very dark gray */
+    --tertiary-color: #f5f5f5; /* White for contrast */
+    --accent-color: #e8dfff; /* Light lavender */
     --font-primary: 'Poppins', sans-serif;
 }
 
-/* Stili globali */
+/* Global styles */
 body {
     font-family: var(--font-primary);
     background-color: var(--primary-color);
@@ -39,18 +38,18 @@ body {
 /* Header */
 .header-title {
     color: var(--tertiary-color);
-    margin: 10px 0; /* Ridotto spazio sopra e sotto il titolo */
+    margin: 10px 0; /* Reduced space above and below the title */
     display: inline-block;
     text-align: center;
 }
 
 .header-icon {
-    height: 80px; /* Dimensione ingrandita dell'icona */
+    height: 80px; /* Enlarged icon size */
     width: 80px; 
     margin-left: 15px;
 }
 
-/* Pulsante "Indietro" */
+/* Back Button */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -60,15 +59,15 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease-in-out;
-    margin-bottom: 20px; /* Spazio sotto il pulsante */
+    margin-bottom: 20px; /* Space below the button */
 }
 
 .back-button i {
-    margin-right: 8px; /* Spazio tra l'icona e il testo */
+    margin-right: 8px; /* Space between icon and text */
 }
 
 .back-button:hover {
-    background-color: #d2b8ff; /* Colore di hover per il bottone */
+    background-color: #d2b8ff; /* Hover color for the button */
 }
 
 /* Form */
@@ -76,7 +75,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Allinea a sinistra */
+    align-items: flex-start; /* Aligns to the left */
 }
 
 .form-group label {
@@ -102,12 +101,12 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(216, 192, 255, 0.25);
 }
 
-
-
-
 textarea.form-control {
     resize: vertical;
 }
+
+
+
 
 .btn-primary {
     background-color: var(--accent-color);
@@ -121,4 +120,5 @@ textarea.form-control {
 .btn-primary:hover {
     background-color: #d2b8ff;
 }
+
 

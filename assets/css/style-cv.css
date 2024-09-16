@@ -7,34 +7,34 @@ body {
 header {
     padding: 20px;
     border-radius: 5px; 
-    border: 2px solid #F9BC3F; /* Colore del bordo giallo */
+    border: 2px solid #F9BC3F; /* Yellow border color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex; 
     align-items: center;
-    gap: 20px; /* Spazio tra la foto e le informazioni */
+    gap: 20px; /* Space between photo and information */
 }
 
 .breadcrumb-container {
-    margin: 0; /* Rimuove il margine */
-    padding: 0; /* Rimuove il padding */
+    margin: 0; /* Removes margin */
+    padding: 0; /* Removes padding */
 }
 
 .breadcrumb {
-    background-color: transparent; /* Rende trasparente lo sfondo del breadcrumb */
-    padding: 0; /* Rimuove il padding */
+    background-color: transparent; /* Makes breadcrumb background transparent */
+    padding: 0; /* Removes padding */
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    content: "›"; /* Separatore tra gli elementi del breadcrumb */
-    color: #F9BC3F; /* Colore del separatore */
+    content: "›"; /* Separator between breadcrumb items */
+    color: #F9BC3F; /* Separator color */
 }
 
 .breadcrumb-home {
-    color: #ffffff; /* Colore bianco per il link "Home" */
+    color: #ffffff; /* White color for "Home" link */
 }
 
 .breadcrumb-home:hover {
-    color: #F9BC3F; /* Colore giallo al passaggio del mouse, puoi modificarlo a tuo piacimento */
+    color: #F9BC3F; /* Yellow color on hover, can be changed as needed */
 }
 
 .content-container {
@@ -43,28 +43,28 @@ header {
     border: 4px solid #F9BC3F; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     margin: 0 auto; 
-    max-width: 960px; /* Limita la larghezza per il contenuto */
+    max-width: 960px; /* Limits the width for the content */
 }
 
-/* Centratura della foto nel cerchio */
+/* Centering photo in the circle */
 .profile-circle {
-    width: 150px; /* Dimensione base per schermi piccoli */
-    height: 150px; /* Dimensione base per schermi piccoli */
+    width: 150px; /* Base size for small screens */
+    height: 150px; /* Base size for small screens */
     border-radius: 50%;
     border: 4px solid #F9BC3F;
     background-color: #fff;
-    display: flex; /* flexbox per la centratura */
+    display: flex; /* Flexbox for centering */
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 20px; /* Spazio sotto la foto */
+    margin-bottom: 20px; /* Space below the photo */
 }
 
 .profile-circle img {
     width: 100%;  
-    height: 100%; /* Riempie il cerchio */
+    height: 100%; /* Fills the circle */
     object-fit: cover;  
-    object-position: center top;  /* Regola la posizione dell'immagine */
+    object-position: center top;  /* Adjusts image position */
 }
 
 h1 {
@@ -96,29 +96,29 @@ ul ul {
     list-style-type: circle;
 }
 
-/* Media Queries per dispositivi mobili */
+/* Media Queries for mobile devices */
 @media (max-width: 768px) {
     .profile-circle {
-        width: 100px; /* Dimensione ridotta per schermi più piccoli */
-        height: 100px; /* Dimensione ridotta per schermi più piccoli */
+        width: 100px; /* Reduced size for smaller screens */
+        height: 100px; /* Reduced size for smaller screens */
     }
 
     header {
-        flex-direction: column; /* Colonna per schermi più piccoli */
+        flex-direction: column; /* Column layout for smaller screens */
         align-items: flex-start;
     }
 
     .ml-md-5 {
-        margin-left: 0; /* Rimuove il margine sinistro su schermi piccoli */
+        margin-left: 0; /* Removes left margin on small screens */
     }
 }
 
 @media (max-width: 576px) {
     h1 {
-        font-size: 1.5rem; /* Riduce la dimensione del font per schermi molto piccoli */
+        font-size: 1.5rem; /* Reduces font size for very small screens */
     }
 
     .section-title {
-        font-size: 1.25rem; /* Riduce la dimensione del font per le intestazioni delle sezioni */
+        font-size: 1.25rem; /* Reduces font size for section titles */
     }
 }

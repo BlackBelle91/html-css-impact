@@ -1,13 +1,13 @@
-/* Variabili CSS per personalizzazione */
+/* CSS Variables for customization */
 :root {
-    --primary-color: #121212; /* Nero profondo */
-    --secondary-color: #1e1e1e; /* Grigio molto scuro */
-    --tertiary-color: #f5f5f5; /* Bianco */
-    --accent-color: #e8dfff; /* Lilla chiaro */
+    --primary-color: #121212; /* Deep black */
+    --secondary-color: #1e1e1e; /* Very dark gray */
+    --tertiary-color: #f5f5f5; /* White */
+    --accent-color: #e8dfff; /* Light lavender */
     --font-primary: 'Poppins', sans-serif;
 }
 
-/* Stili globali */
+/* Global styles */
 body {
     font-family: var(--font-primary);
     background-color: var(--primary-color);
@@ -23,8 +23,8 @@ body {
 }
 
 .header-icon {
-    height: 80px; /* Dimensione icona */
-    width: 80px; /* Dimensione icona*/
+    height: 80px; /* Icon size */
+    width: 80px; /* Icon size */
     margin-left: 15px;
 }
 
@@ -48,7 +48,7 @@ body {
     color: var(--tertiary-color);
 }
 
-/* Pulsante "Indietro" */
+/* "Back" button */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -58,14 +58,14 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease-in-out;
-    margin-bottom: 20px; /* Spazio sotto il pulsante */
+    margin-bottom: 20px; /* Space below the button */
 }
 
 .back-button:hover {
     background-color: #d2b8ff;
 }
 
-/* Personalizzazione delle carte */
+/* Card customization */
 .card {
     background-color: var(--secondary-color);
     border: 2px solid var(--accent-color);
@@ -75,24 +75,24 @@ body {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    height: 100%; /*card stessa altezza */
+    height: 100%; /* Card's height */
 }
 
-/* Immagine della card */
+/* Card image */
 .card-img-top {
     width: 100%;
-    height: 200px; /* altezza fissa per l'immagine */
+    height: 200px; /* Fixed height for the image */
     object-fit: cover;
 }
 
-/* Corpo della card */
+/* Card body */
 .card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
 }
 
-/* Titolo della card */
+/* Card title */
 .card-title {
     color: var(--accent-color);
     font-size: 1.5rem;
@@ -100,7 +100,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Testo della card */
+/* Card text */
 .card-text {
     color: var(--tertiary-color);
     font-size: 1rem;
@@ -109,10 +109,10 @@ body {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10; /* Mostra fino a 10 righe di testo */
+    -webkit-line-clamp: 10; /* Shows up to 10 lines of text */
 }
 
-/* Pulsante della card */
+/* Card button */
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -121,4 +121,23 @@ body {
 
 .btn-primary:hover {
     background-color: #d2b8ff;
+}
+
+/* Social icons */
+.social-icon {
+    color: var(--accent-color); /* Lavender color */
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #333; /* Hover color */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, #555 0%, #2c2c2c 100%); /* Gradient for the footer */
+    color: var(--accent-color); /* Footer text color */
+    padding: 1rem;
+    text-align: center;
 }

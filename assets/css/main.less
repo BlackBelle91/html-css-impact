@@ -1,11 +1,11 @@
-/* Variabili globali */
-@primary-color: #121212; /* Nero profondo */
-@secondary-color: #1e1e1e; /* Grigio molto scuro */
-@tertiary-color: #f5f5f5; /* Bianco */
-@accent-color: #e8dfff; /* Lilla chiaro */
+/* Global Variables */
+@primary-color: #121212; /* Deep black */
+@secondary-color: #1e1e1e; /* Very dark gray */
+@tertiary-color: #f5f5f5; /* White */
+@accent-color: #e8dfff; /* Light lavender */
 @font-primary: 'Poppins', sans-serif;
 
-/* Stili globali */
+/* Global Styles */
 body {
   font-family: @font-primary;
   background-color: @primary-color;
@@ -39,18 +39,18 @@ body {
 /* Header */
 .header-title {
   color: @tertiary-color;
-  margin: 10px 0; /* Ridotto spazio sopra e sotto il titolo */
+  margin: 10px 0; /* Reduced space above and below the title */
   display: inline-block;
   text-align: center;
 }
 
 .header-icon {
-  height: 80px; /* Dimensione ingrandita dell'icona */
-  width: 80px; /* Dimensione ingrandita dell'icona */
-  margin-left: 15px; /* Spazio tra il titolo e la stellina */
+  height: 80px; /* Enlarged icon size */
+  width: 80px; /* Enlarged icon size */
+  margin-left: 15px; /* Space between the title and the star icon */
 }
 
-/* Pulsante "Indietro" */
+/* Back Button */
 .back-button {
   display: inline-flex;
   align-items: center;
@@ -60,14 +60,14 @@ body {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
-  margin-bottom: 20px; /* Spazio sotto il pulsante */
+  margin-bottom: 20px; /* Space below the button */
 
   i {
-    margin-right: 8px; /* Spazio tra l'icona e il testo */
+    margin-right: 8px; /* Space between the icon and the text */
   }
 
   &:hover {
-    background-color: #d2b8ff; /* Colore di hover per il bottone */
+    background-color: #d2b8ff; /* Hover color for the button */
   }
 }
 
@@ -109,7 +109,7 @@ body {
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 10; /* Mostra fino a 10 righe di testo */
+      -webkit-line-clamp: 10; /* Shows up to 10 lines of text */
     }
   }
 
@@ -124,24 +124,24 @@ body {
   }
 }
 
-/* Cerchio con immagine centrata e bordo lilla */
+/* Circle with centered image and lavender border */
 .profile-circle {
-  width: 130px; /* Dimensione del cerchio */
+  width: 130px; /* Size of the circle */
   height: 130px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex; /* Usa flexbox per centrare l'immagine */
-  justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
-  margin-right: 15px; /* Margine tra il cerchio e il titolo */
-  border: 3px solid @accent-color; /* Bordo lilla attorno al cerchio */
+  display: flex; /* Uses flexbox to center the image */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin-right: 15px; /* Margin between the circle and the title */
+  border: 3px solid @accent-color; /* Lavender border around the circle */
   position: relative;
 
   img {
-    width: 100%; /* Riempie il cerchio */
-    height: 100%; /* Riempie il cerchio */
-    object-fit: cover; /* Mantiene le proporzioni e riempie il cerchio */
-    object-position: center top; /* Regola la posizione dell'immagine */
+    width: 100%; /* Fills the circle */
+    height: 100%; /* Fills the circle */
+    object-fit: cover; /* Maintains aspect ratio and fills the circle */
+    object-position: center top; /* Adjusts image position */
   }
 }
 
@@ -150,7 +150,7 @@ body {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Allinea a sinistra */
+  align-items: flex-start; /* Aligns to the left */
 
   label {
     color: @tertiary-color;
@@ -180,7 +180,7 @@ body {
   }
 }
 
-/* Pulsante primario */
+/* Primary Button */
 .btn-primary {
   background-color: @accent-color;
   color: @primary-color;
@@ -197,12 +197,12 @@ body {
 /* Divider */
 .divider {
   border: none;
-  border-top: 2px solid @accent-color; /* Linea sottile lilla */
-  margin: 30px auto; /* Spazio sopra e sotto la linea e centratura */
+  border-top: 2px solid @accent-color; /* Thin lavender line */
+  margin: 30px auto; /* Space above and below the line and center alignment */
   width: 50%; 
 }
 
-/* Descrizione */
+/* Description */
 .description-text {
   text-align: center;
   margin: 0 auto;

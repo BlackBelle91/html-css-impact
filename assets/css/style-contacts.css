@@ -149,6 +149,19 @@ textarea.form-control {
     }
 }
 
+/* Specific styling for desktop */
+@media (min-width: 769px) {
+    #confirmation-message {
+        text-align: center; /* Centers the text in the message on desktop */
+        margin: 0 auto; /* Centers the message container */
+        width: fit-content; /* Ensures the width adjusts to the content */
+        padding: 20px; /* Optional: add padding if needed */
+        border: 1px solid var(--accent-color); /* Optional: add border for better visibility */
+        border-radius: 5px; /* Optional: rounded corners */
+        background-color: var(--primary-color); /* Background color to match the theme */
+    }
+}
+
 
 
 

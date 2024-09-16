@@ -105,9 +105,7 @@ textarea.form-control {
     resize: vertical;
 }
 
-
-
-
+/* Button primary */
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -120,5 +118,35 @@ textarea.form-control {
 .btn-primary:hover {
     background-color: #d2b8ff;
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    #form-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    #confirmation-message {
+        position: relative; /* Changed from absolute to relative to avoid overlap */
+        z-index: 0; /* Ensure the message is not above other elements */
+        margin-top: 20px; /* Space above the message */
+    }
+
+    .back-button {
+        margin-top: 20px; /* Space above the back button */
+        display: block; /* Forces the button to be on a new line */
+        width: 100%; /* Takes up the full available width */
+        text-align: center; /* Centers the button text */
+    }
+
+    /* Ensure confirmation message is visible */
+    #confirmation-message h2, 
+    #confirmation-message p {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
 
 

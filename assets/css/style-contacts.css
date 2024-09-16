@@ -105,7 +105,9 @@ textarea.form-control {
     resize: vertical;
 }
 
-/* Button */
+
+
+
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -119,48 +121,4 @@ textarea.form-control {
     background-color: #d2b8ff;
 }
 
-/* Confirmation Message */
-#confirmation-message {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .header-title {
-        font-size: 1.5rem;
-    }
-
-    .header-icon {
-        height: 60px;
-        width: 60px;
-        margin-left: 10px;
-    }
-
-    .back-button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .btn-primary {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .form-control {
-        font-size: 0.9rem;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .btn-primary {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}

@@ -1,131 +1,10 @@
-:root {
-    --primary-color: #121212; /* Deep black */
-    --secondary-color: #1e1e1e; /* Very dark gray */
-    --tertiary-color: #f5f5f5; /* White for contrast */
-    --accent-color: #e8dfff; /* Light lavender */
-    --font-primary: 'Poppins', sans-serif;
-}
-
-/* Global styles */
-body {
-    font-family: var(--font-primary);
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    margin: 0;
-    padding: 0;
-}
-
-/* Breadcrumb */
-.breadcrumb {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-
-.breadcrumb-item a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.breadcrumb-item a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-    color: var(--tertiary-color);
-}
-
-/* Header */
-.header-title {
-    color: var(--tertiary-color);
-    margin: 10px 0; /* Reduced space above and below the title */
-    display: inline-block;
-    text-align: center;
-}
-
-.header-icon {
-    height: 80px; /* Enlarged icon size */
-    width: 80px; 
-    margin-left: 15px;
-}
-
-/* Back Button */
-.back-button {
-    display: inline-flex;
-    align-items: center;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-    margin-bottom: 20px; /* Space below the button */
-}
-
-.back-button i {
-    margin-right: 8px; /* Space between icon and text */
-}
-
-.back-button:hover {
-    background-color: #d2b8ff; /* Hover color for the button */
-}
-
-/* Form */
-.form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns to the left */
-}
-
-.form-group label {
-    color: var(--tertiary-color);
-    font-size: 1.1rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.form-control {
-    width: 100%;
-    padding: 12px;
-    background-color: var(--primary-color);
-    border: 1px solid var(--accent-color);
-    color: var(--tertiary-color);
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.form-control:focus {
-    border-color: #d2b8ff;
-    box-shadow: 0 0 0 0.2rem rgba(216, 192, 255, 0.25);
-}
-
-textarea.form-control {
-    resize: vertical;
-}
-
-/* Button */
-.btn-primary {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-    background-color: #d2b8ff;
-}
-
 /* Confirmation Message */
 #confirmation-message {
     display: none;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    position: relative; /* Ensure it's relative to avoid absolute positioning conflicts */
+    position: relative; /* Make sure it's relative to avoid absolute positioning conflicts */
     z-index: 1; /* Ensure it appears above other content */
 }
 
@@ -145,25 +24,20 @@ textarea.form-control {
     .back-button {
         display: block;
         width: 100%;
-        padding: 10px;
-        font-size: 1rem;
+        padding: 8px 16px;
+        font-size: 0.9rem;
         text-align: center; /* Center text inside the button */
         margin-bottom: 20px; /* Space below the button */
     }
 
     .btn-primary {
-        padding: 10px;
+        padding: 10px 20px;
         font-size: 1rem;
         width: 100%; /* Ensure button spans full width */
     }
 
     #form-container {
         position: relative; /* Ensure form container positioning is correct */
-        padding: 0 15px; /* Add padding to avoid overlap */
-    }
-
-    #contact {
-        margin-top: 20px; /* Add margin to avoid overlap with the back button */
     }
 }
 
@@ -177,7 +51,7 @@ textarea.form-control {
     }
 
     .btn-primary {
-        padding: 8px;
+        padding: 8px 16px;
         font-size: 0.9rem;
     }
 
@@ -189,9 +63,5 @@ textarea.form-control {
         height: 50px;
         width: 50px;
         margin-left: 8px;
-    }
-
-    #confirmation-message {
-        padding: 15px;
     }
 }

@@ -122,13 +122,6 @@ textarea.form-control {
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     /* Ensure confirmation message appears below the form */
-    #confirmation-message {
-        margin-top: 20px; /* Add space above the confirmation message */
-        display: block; /* Ensure the message is visible */
-        text-align: center; /* Center the text in the message */
-    }
-
-    /* Ensure back button appears above the confirmation message */
     #form-container {
         display: flex;
         flex-direction: column;
@@ -136,14 +129,23 @@ textarea.form-control {
     }
 
     #confirmation-message {
-        order: 1; /* Place confirmation message below the form */
+        display: block; /* Ensure the message is visible */
+        text-align: center; /* Center the text in the message */
+        margin-top: 20px; /* Add space above the confirmation message */
     }
 
+    /* Ensure back button appears above the confirmation message */
     .back-button {
-        order: -1; /* Place back button above the confirmation message */
         width: 100%; /* Full width for the button */
         text-align: center; /* Center the button text */
+        order: -1; /* Place back button above the confirmation message */
         margin-bottom: 20px; /* Space below the button */
+    }
+
+    /* Ensure the form container is centered */
+    #form-container {
+        width: 100%; /* Full width for form container */
+        max-width: 600px; /* Optional: limit the maximum width */
     }
 }
 

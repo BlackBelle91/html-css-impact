@@ -105,9 +105,7 @@ textarea.form-control {
     resize: vertical;
 }
 
-
-
-
+/* Button */
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -121,4 +119,79 @@ textarea.form-control {
     background-color: #d2b8ff;
 }
 
+/* Confirmation Message */
+#confirmation-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative; /* Ensure it's relative to avoid absolute positioning conflicts */
+    z-index: 1; /* Ensure it appears above other content */
+}
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.5rem;
+        text-align: center; /* Ensure title is centered on smaller screens */
+    }
+
+    .header-icon {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    .back-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center; /* Center text inside the button */
+        margin-bottom: 20px; /* Space below the button */
+    }
+
+    .btn-primary {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%; /* Ensure button spans full width */
+    }
+
+    #form-container {
+        position: relative; /* Ensure form container positioning is correct */
+        padding: 0 15px; /* Add padding to avoid overlap */
+    }
+
+    #contact {
+        margin-top: 20px; /* Add margin to avoid overlap with the back button */
+    }
+}
+
+@media (max-width: 576px) {
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-primary {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .header-title {
+        font-size: 1.25rem;
+    }
+
+    .header-icon {
+        height: 50px;
+        width: 50px;
+        margin-left: 8px;
+    }
+
+    #confirmation-message {
+        padding: 15px;
+    }
+}
